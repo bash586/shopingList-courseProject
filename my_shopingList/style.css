@@ -1,0 +1,81 @@
+/* 1. CSS Reset (simple version) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Set global styles */
+html{font-size:18px;min-height:100vh;}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height:100vh;
+  width:100%;
+  flex-direction: column;
+  gap:1rem;
+}
+
+/* 3. Basic element styling */
+ul{list-style: none;}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px 1rem;
+  border:#aaa solid 1px;
+  border-radius: 0.25rem;
+}
+
+button{
+  cursor:pointer;
+  &:hover{
+    border:#333 solid 2px; 
+    background:#1f1;
+  }
+}
+
+header{
+    margin-bottom:3rem;
+}
+/* 4. Container helper class */
+.center-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+
+/* 6. specific styling */
+.add-form{display:flex;}
+.new-input{flex:1;}
+.task-box,.empty-msg{
+    margin-top:1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    border:#aaa solid 1px;
+    border-radius: 0.25rem;
+    font-size:1.5rem;
+}
+.update-form{
+  display:flex;
+  input{width: 100%;}
+}
+.clear{margin-bottom: 3rem;}
+
+/* 5. Utility classes (optional) */
+  .text-center {text-align: center;}
+  
+  .center-container{display:flex;justify-content: center;align-items:center;}
+  
+  .full-width{width:100%;}
+  
+  .hidden{ display: none;}
